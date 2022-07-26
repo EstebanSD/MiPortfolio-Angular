@@ -1,0 +1,48 @@
+<div class="perfil">                   
+    <img id="foto" src="https://pbs.twimg.com/profile_images/1320232062272626688/-5FkTa5d_400x400.jpg" 
+        alt="" width="100px" height="100px">
+        <button id="edit-img-foto" class="btn edit-img" onclick="editImg()">
+            <img src="https://w7.pngwing.com/pngs/994/388/png-transparent-computer-icons-editing-font-awesome-graphics-editor-advertising-angle-text-logo.png"
+                                alt="">
+        </button>
+        <input id="input-foto" type="text" style="display:none">
+</div>
+
+<div class="container datos">
+    <div class ="row">                        
+        <div class="col datosPersonales">
+            <button type="button" class="btn edit-p">
+                <img src="https://w7.pngwing.com/pngs/994/388/png-transparent-computer-icons-editing-font-awesome-graphics-editor-advertising-angle-text-logo.png"
+                    alt="">
+            </button>
+
+            <input type="text" id="texto-datos" class="input-texto" value="" style="display:none">
+
+            <h4><u>Datos Personales</u></h4>
+                <p><b>Nombre:</b> Esteban Salvay Dilena</p>
+                <p><b>Edad:</b> 27</p>
+                <p><b>Título:</b> Full Stack Developer Jr.</p>
+                <p><b>E-mail:</b> estebansaldil22@gmail.com</p>
+                <p><b>Teléfono:</b> 3584904406</p>
+                <p><b>Ciudad:</b> Rio Cuarto</p>
+        </div>
+
+        <div class="col quienSoy">
+            <button type="button" class="btn edit-p" onclick="obtenerTexto('input-quienSoy','parrafo-quienSoy')">
+                <img src="https://w7.pngwing.com/pngs/994/388/png-transparent-computer-icons-editing-font-awesome-graphics-editor-advertising-angle-text-logo.png"
+                alt="">
+            </button> 
+        
+            <h4><u>Acerca de Mi</u></h4>
+            <p id="parrafo-quienSoy">
+                Me concidero una persona a la que le
+                gusta aprender. Siempre estoy abierto a
+                las críticas constructivas y a ayudar a
+                alguien en temas que esten dentro de mis
+                capacidades.            
+            </p>
+            
+            <input id="input-quienSoy" oninput="cambiarTexto(this.value,'parrafo-quienSoy')" type="text" style="display:none">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,41 @@
+body{
+    margin: 0px;
+}
+
+/* 
+//////////////////////////
+//////////////////////////    
+*/
+.edit-img{
+    border-radius: 50%;
+    position: relative;
+    float: right;
+    /*visibility: hidden;*/
+}
+
+.edit-img img{
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+    border-radius: 50%;
+}
+
+.edit-p{
+    float: right;
+    border-radius: 50%;
+    /*visibility: hidden;*/
+}
+
+.edit-p img{
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+

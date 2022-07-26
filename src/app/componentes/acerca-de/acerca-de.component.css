@@ -1,0 +1,38 @@
+/*FOTO DE PERFIL*/
+#foto{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /*border: 2px solid black;*/
+    position: relative;
+    top: 350px; left: 120px;
+}
+
+#edit-img-foto{
+    top: 500px; left: -950px;
+    /*visibility: hidden;*/
+}
+
+#texto-foto{
+    top: 425px; left: 500px;
+    /*visibility: hidden;*/
+}
+
+.datos{
+    padding: 4px;
+    margin-top: 400px;
+    margin-bottom: 50px;
+    border-width: 2px;
+    border-style: dashed;
+    border-color: rgb(5, 100, 138);
+}
+
+#texto-datos{
+    top: 750px; left: 400px;
+    /*visibility: hidden;*/
+}
+
+.datosPersonales h4,
+.quienSoy h4{
+    text-align: center;
+} 

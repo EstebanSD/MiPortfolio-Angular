@@ -1,0 +1,48 @@
+<div class="barra">
+    <span class="logo">
+            <svg width="50px" height="50px">
+                <circle cx="25" cy="25" r="20"></circle>
+                <polyline points="15 15, 21,23 15,30" fill="none" stroke="white" stroke-linecap="round" stroke-width="2"></polyline>
+                <line x1="23" y1="33" x2="33" y2="33" fill="none" stroke="yellow" stroke-linecap="round" stroke-width="2"></line>
+            </svg>
+            <span class="nombre_beca">{{dataObjeto.nombre_beca}}</span>
+    </span>
+    
+    <span class="redes">
+        <a href="https://twitter.com/SalvayDilenaEst" target="_blank" rel="noopener" title="Twitter">
+                <img 
+                  [src]="dataObjeto.img_redes.twitter"
+                  alt="Logo de Twitter" 
+                  width="35px" 
+                  height="35px">
+        </a>
+        <a href="https://www.instagram.com/estebansalvaydilena/?hl=es-la" target="_blank" rel="noopener" title="Instagram">
+                <img 
+                  [src]="dataObjeto.img_redes.instagram"
+                  alt="Logo de Instagram" 
+                  width="35px" 
+                  height="35px">
+        </a>
+        <a href="https://www.facebook.com/esteban.salvaydilena" target="_blank" rel="noopener" title="Facebook">
+                <img 
+                  [src]="dataObjeto.img_redes.facebook"
+                  alt="Logo de Facebook" 
+                  width="35px" 
+                  height="35px">
+        </a>
+        
+        <button class="btn btn-outline-success" onclick="mostrarLogin()" value="false">Login</button>
+    </span>
+</div>
+<div class="banner">
+    <img id="img-banner" [src]="dataObjeto.img_banner" alt="Imagen del Banner">
+
+    <button type="button" class="btn edit-img" onclick="editImg('input-banner')">
+    
+        
+        <img src="https://w7.pngwing.com/pngs/994/388/png-transparent-computer-icons-editing-font-awesome-graphics-editor-advertising-angle-text-logo.png"
+                alt="Icono edicion">
+    </button>
+    
+    <input id="input-banner" type="file" style="display:none">
+</div> 

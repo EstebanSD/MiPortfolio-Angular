@@ -1,0 +1,46 @@
+.barra{
+    background-color: grey;
+    margin: 0px;
+    width: 100%;
+}
+
+.nombre_beca{
+    color: black;
+}
+
+.redes{
+    float: right;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+
+.redes a {
+    padding: 5px;
+}
+
+.redes a img{
+    border-radius: 50%;
+}
+
+.redes button{
+    margin-left: 20px;
+}
+
+#img-banner{
+    margin: 0px 50px 50px 0px;
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    border: 2px solid rgb(2, 105, 109);
+}
+
+#input-banner{
+    position: relative;
+    left: 500px;
+    top: 200px;
+}
+
+#texto-banner{
+    top: 150px; left: 400px;
+    /*visibility: hidden;*/
+}
