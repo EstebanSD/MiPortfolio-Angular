@@ -1,0 +1,19 @@
+.experiencia{
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.btn{
+    margin: 10px 0px 10px 0px;
+    margin-left: 100px;
+    position: relative;
+    float: right;
+}
+
+p{
+    margin: 0px;
+}
+
+td p{
+    text-align: justify;
+}

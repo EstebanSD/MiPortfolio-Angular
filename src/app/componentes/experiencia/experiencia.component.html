@@ -1,23 +1,32 @@
-<div class="container exp">
+<div class="container experiencia">
     <div class="row">
-        <div class="col">
-            <h4><u>Experiencia Laboral</u></h4>
-            <table class="table">
+        <div class="card col">
+            <h4>
+                <u>Experiencia Laboral</u>
+            
+                <button type="button" class="btn btn-primary" onclick="obtenerTexto()">
+                    Editar
+                </button>
+            </h4>
+            <table class="table" *ngFor="let exp of dataObjetoLista">
                 <tbody>
                     <tr>
                         <th scope="row"></th>
-                        <td>De 04/2017 a
-                            04/2019<br>
-                            <em>(Rio Cuarto)</em>
+                        <td>De {{exp.start}} a {{exp.end}}
+                            <p>
+                                <em>{{exp.ciudad}}</em>
+                            </p>
                         </td>
-                        <td><b>Roberto Dilena & Cia</b><br>
-                            <em>Receptor y Emisor de Carta Porte</em><br>
-                            <u>Tareas realizadas:</u> Mi experiencia laboral es muy
-                            acotada, fue en una empresa familiar en la que
-                            me encargaba de gestionar documentos que les
-                            permitia a los choferes cargar y descargar grano.
-                            Ganando un poco de experiencia en atención al
-                            cliente y en uso de excel.
+                        <td>
+                            <p>
+                                <b>{{exp.empresa}}</b>
+                            </p>
+                            <p>
+                                <em>{{exp.cargo}}</em>
+                            </p>
+                            <p><u>Tareas realizadas:</u>
+                                {{exp.tarea}}
+                            </p>
                         </td>
                     </tr>  
                 </tbody>

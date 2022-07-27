@@ -1,0 +1,18 @@
+.educacion{
+    padding: 20px;
+}
+
+.btn{
+    margin: 10px 0px 10px 0px;
+    margin-left: 100px;
+    position: relative;
+    float: right;
+}
+
+tbody{
+    text-align: center;
+}
+
+td p{
+    text-align: justify;
+}

@@ -1,0 +1,23 @@
+
+.datos{
+    padding: 10px;
+    margin: 400px 5px 5px 5px;
+    float: left;
+    
+}
+
+.datos .card p{
+    margin: 2px;
+    padding: 4px;
+}
+
+.btn{
+    margin-left: 100px;
+    position: relative;
+    float: right;
+}
+
+#texto-datos{
+    top: 750px; left: 400px;
+    /*visibility: hidden;*/
+}

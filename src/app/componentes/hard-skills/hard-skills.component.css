@@ -1,3 +1,13 @@
+.habilidades{
+    margin-top: 50px;
+}
+
+.btn{
+    margin: 10px 0px 10px 0px;
+    margin-left: 100px;
+    position: relative;
+    float: right;
+}
 /*//////////////////*/
 /*Barra de Progreso*/
 /*////////////////*/

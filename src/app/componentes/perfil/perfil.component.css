@@ -1,0 +1,32 @@
+#foto{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid rgb(0, 72, 75);
+    position: relative;
+    top: 350px; left: 120px;
+}
+
+.btn-foto{
+    top: 420px; 
+    left: 100px;
+    width: 30px;
+    height: 30px;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.btn-foto img{
+    width: 25px; 
+    height: 25px;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 50%;
+}
+
+#texto-foto{
+    top: 425px; left: 500px;
+    /*visibility: hidden;*/
+}

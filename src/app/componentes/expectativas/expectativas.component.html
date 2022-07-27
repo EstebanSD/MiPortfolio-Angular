@@ -1,0 +1,17 @@
+<div class="container expect">
+    <div class="row">
+        <div class="card col">
+            <h4>
+                <u>Expectativas</u>
+            
+                <button type="button" class="btn btn-primary" onclick="obtenerTexto()">
+                    Editar
+                </button>
+            </h4>
+            <p id="parrafo-expect">
+                {{dataObjeto.expectativas}}
+            </p>
+        </div>
+        <input id="texto-expect" oninput="cambiarTexto(this.value,'parrafo-expect')" type="text" style="display:none">
+    </div>
+</div>

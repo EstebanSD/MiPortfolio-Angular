@@ -1,0 +1,16 @@
+.expect{
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.btn{
+  margin: 10px 0px 10px 0px;
+  margin-left: 100px;
+  position: relative;
+  float: right;
+}
+
+#texto-expect{
+    left: 600px;
+  /* visibility: hidden;*/
+}

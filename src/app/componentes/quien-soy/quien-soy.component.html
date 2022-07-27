@@ -1,0 +1,15 @@
+<div class="card quienSoy">
+    <h4>
+        <u>Acerca de Mi</u>
+
+        <button type="button" class="btn btn-primary btn-edit" onclick="">
+            Editar
+        </button>
+
+    </h4>
+    <p id="parrafo-quienSoy">
+        {{dataObjeto.acerca_de}}            
+    </p>
+    
+    <input id="input-quienSoy" oninput="cambiarTexto(this.value,'parrafo-quienSoy')" type="text" style="display:none">
+</div>
