@@ -4,11 +4,11 @@
             <h4>
                 <u>Experiencia Laboral</u>
             
-                <button type="button" class="btn btn-primary" onclick="obtenerTexto()">
+                <button type="button" class="btn btn-primary">
                     Editar
                 </button>
             </h4>
-            <table class="table" *ngFor="let exp of dataObjetoLista">
+            <table class="table" *ngFor="let exp of dataObjetLista">
                 <tbody>
                     <tr>
                         <th scope="row"></th>
@@ -24,7 +24,7 @@
                             <p>
                                 <em>{{exp.cargo}}</em>
                             </p>
-                            <p><u>Tareas realizadas:</u>
+                            <p><u>Tareas realizada:</u>
                                 {{exp.tarea}}
                             </p>
                         </td>

@@ -1,17 +1,37 @@
-<div class="container expect">
-    <div class="row">
-        <div class="card col">
+<div class="container comp-expect">
+        <div class="card">
             <h4>
                 <u>Expectativas</u>
             
-                <button type="button" class="btn btn-primary" onclick="obtenerTexto()">
+                <button id="edit" class="btn btn-primary" (click)="toggle()">
                     Editar
                 </button>
             </h4>
-            <p id="parrafo-expect">
-                {{dataObjeto.expectativas}}
-            </p>
+            <div class="expect">
+                <p id="parrafo-expect">
+                    {{dataObjet.expectativas}} 
+                </p>
+
+                <fa-icon class="icono" *ngIf="showForm"
+                    [icon]="faXmark"
+                    
+                >
+                </fa-icon> 
+            
+            </div>
         </div>
-        <input id="texto-expect" oninput="cambiarTexto(this.value,'parrafo-expect')" type="text" style="display:none">
-    </div>
+
+        <form *ngIf="showForm">
+            <div class="form-control">
+                <input 
+                    type="text" 
+                    name="textArea" 
+                    id="textArea" 
+                    placeholder="Edite el contenido"
+                    [(ngModel)]="textArea"
+                >      
+            </div>
+
+            <input type="submit" value="Guardar" class="btn btn-secondary">
+        </form>
 </div>

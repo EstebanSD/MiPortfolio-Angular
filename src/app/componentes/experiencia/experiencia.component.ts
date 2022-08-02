@@ -7,13 +7,13 @@ import { DatosService } from 'src/app/servicios/datos.service';
   styleUrls: ['./experiencia.component.css']
 })
 export class ExperienciaComponent implements OnInit {
-  dataObjetoLista: any;
+  dataObjetLista: any = "";
 
   constructor(private datosPortfolio: DatosService) { }
 
   ngOnInit(): void {
     this.datosPortfolio.obtenerDatos().subscribe(data =>{
-      this.dataObjetoLista = data.experiencia;
+      this.dataObjetLista = data.experiencia;
     });
   }
 

@@ -1,16 +1,42 @@
-.expect{
+.comp-expect{
+  background-color: rgb(250, 250, 250);
   margin-top: 20px;
   padding: 20px;
 }
 
+.card{
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.expect{
+  background-color: #f4f4f4;
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expect:hover{
+  background-color: aliceblue;
+}
+
+.icono{
+  margin: 5px;
+  padding: 5px;
+}
+
+.icono:hover{
+  color: red;
+}
+
 .btn{
-  margin: 10px 0px 10px 0px;
+  margin: 10px 0px;
+}
+
+#edit{
   margin-left: 100px;
   position: relative;
   float: right;
-}
-
-#texto-expect{
-    left: 600px;
-  /* visibility: hidden;*/
 }

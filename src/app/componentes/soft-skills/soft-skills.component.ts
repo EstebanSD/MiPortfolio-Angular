@@ -7,7 +7,7 @@ import { DatosService } from 'src/app/servicios/datos.service';
   styleUrls: ['./soft-skills.component.css']
 })
 export class SoftSkillsComponent implements OnInit {
-  dataObjetList: any;
+  dataObjetList: any = "";
 
   constructor(private datosPortfolio: DatosService) { }
 

@@ -5,44 +5,47 @@
                 <polyline points="15 15, 21,23 15,30" fill="none" stroke="white" stroke-linecap="round" stroke-width="2"></polyline>
                 <line x1="23" y1="33" x2="33" y2="33" fill="none" stroke="yellow" stroke-linecap="round" stroke-width="2"></line>
             </svg>
-            <span class="nombre_beca">{{dataObjeto.nombre_beca}}</span>
+            <span class="nombre_beca">{{dataObject.beca}}</span>
     </span>
     
     <span class="redes">
-        <a [href]="dataObjeto.redes.twitter" target="_blank" rel="noopener" title="Twitter">
+        <a [href]="dataObject.redTwitter" target="_blank" rel="noopener" title="Twitter">
                 <img 
-                  [src]="dataObjeto.img_redes.twitter"
+                  [src]="dataObject.imageTwitter"
                   alt="Logo de Twitter" 
                   width="35px" 
                   height="35px">
         </a>
-        <a [href]="dataObjeto.redes.instagram" target="_blank" rel="noopener" title="Instagram">
+        <a [href]="dataObject.redInstagram" target="_blank" rel="noopener" title="Instagram">
                 <img 
-                  [src]="dataObjeto.img_redes.instagram"
+                  [src]="dataObject.imageInstagram"
                   alt="Logo de Instagram" 
                   width="35px" 
                   height="35px">
         </a>
-        <a [href]="dataObjeto.redes.facebook" target="_blank" rel="noopener" title="Facebook">
+        <a [href]="dataObject.redFacebook" target="_blank" rel="noopener" title="Facebook">
                 <img 
-                  [src]="dataObjeto.img_redes.facebook"
+                  [src]="dataObject.imageFacebook"
                   alt="Logo de Facebook" 
                   width="35px" 
                   height="35px">
         </a>
         
-        <button class="btn btn-outline-success" onclick="mostrarLogin()" value="false">Login</button>
+        <button class="btn" (click)="toggle()" [ngClass]="color">{{msj}}</button>
     </span>
 </div>
+
+<app-login *ngIf="showForm"></app-login>
+
 <div class="banner">
     <button type="button" class="btn btn-banner" onclick="editImg('input-banner')">
     
-        <img [src]="dataObjeto.img_boton"
+        <img [src]="dataObject.imageBoton"
                 alt="Icono edicion" >
 
     </button>
     
-    <img id="img-banner" [src]="dataObjeto.img_banner" alt="Imagen del Banner">
+    <img id="img-banner" [src]="dataObject.imageBanner" alt="Imagen del Banner">
     
     <input id="input-banner" type="file" style="display:none">
 </div> 

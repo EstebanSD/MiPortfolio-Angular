@@ -31,8 +31,8 @@
 }
 
 #img-banner{
-    margin: 0px;
-    width: 100%;
+    margin: 0% 5%;
+    width: 90%;
     border: 5px solid rgb(2, 105, 109);
     position: absolute;
     z-index: 0;
@@ -40,7 +40,7 @@
 
 .btn-banner{
     top: 5px;
-    right: 5px;
+    right: 2%;
     width: 30px;
     height: 30px;
     margin: 0px;

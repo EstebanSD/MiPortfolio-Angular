@@ -7,7 +7,7 @@ import { DatosService } from 'src/app/servicios/datos.service';
   styleUrls: ['./educacion.component.css']
 })
 export class EducacionComponent implements OnInit {
-  dataObjetList: any;
+  dataObjetList: any = "";
 
   constructor(private datosPortfolio: DatosService) { }
 
