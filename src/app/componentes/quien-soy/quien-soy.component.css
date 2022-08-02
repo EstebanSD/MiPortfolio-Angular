@@ -1,7 +1,12 @@
 .quienSoy{
     background-color: rgb(250, 250, 250);
     padding: 10px;
-    margin: 400px 5px 5px 5px;
+    margin: 390px 5px 5px 5px;
+}
+
+.card{
+    padding: 10px;
+    margin-bottom: 5px;
 }
 
 header{
@@ -33,3 +38,11 @@ header{
     color: red;
 }
 
+.form-control{
+    padding: 5px;
+    margin: 5px;
+}
+
+.form-control > input{
+    width: 100%;
+}

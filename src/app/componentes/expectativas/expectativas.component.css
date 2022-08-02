@@ -31,6 +31,10 @@
   color: red;
 }
 
+.form-control > input{
+  width: 100%;
+}
+
 .btn{
   margin: 10px 0px;
 }

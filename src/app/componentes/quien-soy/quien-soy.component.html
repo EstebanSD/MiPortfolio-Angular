@@ -1,33 +1,37 @@
-<div class="card quienSoy">
-    <header>
-        <h4><u>Acerca de Mi</u></h4>
+<div class="quienSoy">
+    <div class="card">
+        <header>
+            <h4><u>Acerca de Mi</u></h4>
 
-        <button type="button" class="btn btn-primary btn-edit" (click)="toggle()">
-            Editar
-        </button>
+            <button type="button" class="btn btn-primary btn-edit" (click)="toggle()">
+                Editar
+            </button>
 
-    </header>
-    <div class="quienItem">
-        <p id="parrafo-quienSoy">
-            {{dataObjet.acerca_de}}     
-        </p>
-        
-        <fa-icon class="icono"
-            [icon]="faXmark"
-            (click)="onDelete()"
-        >
-        </fa-icon>
-    </div>
-    <form *ngIf="showForm">
-        <div class="form-control">
-            <input 
-                type="text"  
-                id="input-quien-soy" 
-                placeholder="Edite el contenido"
-                [(ngModel)]="textArea"
-            >      
+        </header>
+        <div class="quienItem">
+            <p id="parrafo-quienSoy">
+                {{dataObjet.acerca_de}}     
+            </p>
+            
+            <fa-icon class="icono" 
+                *ngIf="showForm"
+                [icon]="faXmark"
+                (click)="onDelete()"
+            >
+            </fa-icon>
         </div>
 
-        <input type="submit" value="Guardar" class="btn btn-secondary">
-    </form>
+        <form *ngIf="showForm">
+            <div class="form-control">
+                <input 
+                    type="text"  
+                    id="input-quien-soy" 
+                    placeholder="Edite el contenido"
+                    [(ngModel)]="textArea"
+                >      
+            </div>
+    
+            <input type="submit" value="Guardar" class="btn btn-secondary">
+        </form>
+    </div>
 </div>

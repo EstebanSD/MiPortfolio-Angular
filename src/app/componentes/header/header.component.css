@@ -27,13 +27,14 @@
 }
 
 .banner{
-    margin: 0px;
+    margin-top: 10px;
 }
 
 #img-banner{
     margin: 0% 5%;
     width: 90%;
     border: 5px solid rgb(2, 105, 109);
+    border-radius: 20px;
     position: absolute;
     z-index: 0;
 }
