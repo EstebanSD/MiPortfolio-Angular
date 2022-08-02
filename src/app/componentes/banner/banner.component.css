@@ -1,0 +1,26 @@
+.banner{
+    margin-top: 10px;
+}
+
+#img-banner{
+    margin: 0% 5%;
+    width: 90%;
+    border: 5px solid rgb(2, 105, 109);
+    border-radius: 20px;
+    position: absolute;
+    z-index: 0;
+}
+
+.boton{
+    background-color: white;
+    padding: 2px 5px;
+    top: 5px;
+    right: 2%;
+    border-radius: 10px;
+    position: relative;
+    float: right;
+}
+
+.boton:hover{
+    color: blue;
+}

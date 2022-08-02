@@ -1,0 +1,34 @@
+<span class="redes">
+
+    <a href="{{redTw}}" target="_blank" rel="noopener" title="Twitter" *ngIf="redTw != ''">
+            <img 
+              src="{{imgTw}}"
+              alt="Logo de Twitter" 
+              width="35px" 
+              height="35px">
+    </a>
+    <a href="{{redIg}}" target="_blank" rel="noopener" title="Instagram" *ngIf="redIg != ''">
+            <img 
+              src="{{imgIg}}"
+              alt="Logo de Instagram" 
+              width="35px" 
+              height="35px">
+    </a>
+    <a href="{{redFb}}" target="_blank" rel="noopener" title="Facebook" *ngIf="redFb != ''">
+            <img 
+              src="{{imgFb}}"
+              alt="Logo de Facebook" 
+              width="35px" 
+              height="35px">
+    </a>
+    <a href="{{redLn}}" target="_blank" rel="noopener" title="LinkedIn" *ngIf="redLn != ''">
+      <img 
+        src="{{imgLn}}"
+        alt="Logo de LinkedIn" 
+        width="35px" 
+        height="35px">
+    </a>
+
+    <button class="btn" (click)="enviarMiClick()" [ngClass]="clase">{{msj}}</button>
+
+</span>

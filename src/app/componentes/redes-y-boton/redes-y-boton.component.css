@@ -1,0 +1,18 @@
+.redes{
+    float: right;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+
+.redes a{
+    padding: 5px;
+}
+
+.redes a img{
+    border-radius: 50%;
+    background-color: white;
+}
+
+.redes button{
+    margin-left: 20px;
+}

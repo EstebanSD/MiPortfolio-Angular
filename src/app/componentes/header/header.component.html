@@ -1,51 +1,15 @@
 <div class="barra">
-    <span class="logo">
-            <svg width="50px" height="50px">
-                <circle cx="25" cy="25" r="20"></circle>
-                <polyline points="15 15, 21,23 15,30" fill="none" stroke="white" stroke-linecap="round" stroke-width="2"></polyline>
-                <line x1="23" y1="33" x2="33" y2="33" fill="none" stroke="yellow" stroke-linecap="round" stroke-width="2"></line>
-            </svg>
-            <span class="nombre_beca">{{dataObject.beca}}</span>
-    </span>
+
+    <app-logo-arg-programa></app-logo-arg-programa>
     
-    <span class="redes">
-        <a [href]="dataObject.redTwitter" target="_blank" rel="noopener" title="Twitter">
-                <img 
-                  [src]="dataObject.imageTwitter"
-                  alt="Logo de Twitter" 
-                  width="35px" 
-                  height="35px">
-        </a>
-        <a [href]="dataObject.redInstagram" target="_blank" rel="noopener" title="Instagram">
-                <img 
-                  [src]="dataObject.imageInstagram"
-                  alt="Logo de Instagram" 
-                  width="35px" 
-                  height="35px">
-        </a>
-        <a [href]="dataObject.redFacebook" target="_blank" rel="noopener" title="Facebook">
-                <img 
-                  [src]="dataObject.imageFacebook"
-                  alt="Logo de Facebook" 
-                  width="35px" 
-                  height="35px">
-        </a>
-        
-        <button class="btn" (click)="toggle()" [ngClass]="color">{{msj}}</button>
-    </span>
+    <app-redes-y-boton
+        clase= "{{showForm ? 'btn-outline-danger' : 'btn-outline-success' }}" 
+        msj= "{{showForm ? 'Logout' : 'Login' }}"
+        (miClick)="toggle()"
+    ></app-redes-y-boton>
+    
 </div>
 
 <app-login *ngIf="showForm"></app-login>
 
-<div class="banner">
-    <button type="button" class="btn btn-banner" onclick="editImg('input-banner')">
-    
-        <img [src]="dataObject.imageBoton"
-                alt="Icono edicion" >
-
-    </button>
-    
-    <img id="img-banner" [src]="dataObject.imageBanner" alt="Imagen del Banner">
-    
-    <input id="input-banner" type="file" style="display:none">
-</div> 
+<app-banner></app-banner>

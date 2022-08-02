@@ -17,7 +17,10 @@ import { LoginComponent } from './componentes/login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DatosPersonalesComponent } from './componentes/datos-personales/datos-personales.component';
 import { QuienSoyComponent } from './componentes/quien-soy/quien-soy.component';
-import { PerfilComponent } from './componentes/perfil/perfil.component'
+import { PerfilComponent } from './componentes/perfil/perfil.component';
+import { LogoArgProgramaComponent } from './componentes/logo-arg-programa/logo-arg-programa.component';
+import { RedesYBotonComponent } from './componentes/redes-y-boton/redes-y-boton.component';
+import { BannerComponent } from './componentes/banner/banner.component'
 
 
 @NgModule({
@@ -34,7 +37,10 @@ import { PerfilComponent } from './componentes/perfil/perfil.component'
     LoginComponent,
     DatosPersonalesComponent,
     QuienSoyComponent,
-    PerfilComponent
+    PerfilComponent,
+    LogoArgProgramaComponent,
+    RedesYBotonComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,
