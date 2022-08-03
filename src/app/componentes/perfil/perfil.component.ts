@@ -8,7 +8,7 @@ import { DatosService } from 'src/app/servicios/datos.service';
   styleUrls: ['./perfil.component.css']
 })
 export class PerfilComponent implements OnInit {
-  dataObjet: any = "";
+  dataObjet: any = "../assets/img/Perfil.png";   ///Falta usar variable mas especifica...algo como "imgPerfil"
 
   constructor(private dataPortfolio: DatosService) { }
 

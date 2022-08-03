@@ -7,13 +7,24 @@ import { DatosService } from 'src/app/servicios/datos.service';
   styleUrls: ['./datos-personales.component.css']
 })
 export class DatosPersonalesComponent implements OnInit {
- dataObjet: any = "";
+
+  nombre: string = "";
+  edad: string = "";
+  titulo: string = "";
+  email: string = "";
+  telefono: string = "";
+  ciudad: string = "";
 
   constructor(private datosPortfolio: DatosService) { }
 
   ngOnInit(): void {
     this.datosPortfolio.obtenerDatos().subscribe(data => {
-      this.dataObjet = data;
+      this.nombre = data.datosPersonales.nombre;
+      this.edad = data.datosPersonales.edad;
+      this.titulo = data.datosPersonales.titulo;
+      this.email = data.datosPersonales.e_mail;
+      this.telefono = data.datosPersonales.telefono;
+      this.ciudad = data.datosPersonales.ciudad;
     });
   }
 

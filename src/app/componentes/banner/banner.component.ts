@@ -9,7 +9,7 @@ import { faPenToSquare } from '@fortawesome/free-solid-svg-icons';
 })
 export class BannerComponent implements OnInit {
   faPenToSquare = faPenToSquare;
-  imgBanner: string = "";
+  imgBanner: string = "../assets/img/Banner.png";
 
   constructor(private datosPortfolio: DatosService) { }
 
