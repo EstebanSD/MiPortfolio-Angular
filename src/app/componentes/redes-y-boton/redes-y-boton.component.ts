@@ -9,10 +9,10 @@ import { DatosService } from 'src/app/servicios/datos.service';
 })
 export class RedesYBotonComponent implements OnInit {
   
-  imgTw: string = "../assets/img/Twitter.png";
-  imgIg: string = "../assets/img/Instagram.png";
-  imgFb: string = "../assets/img/Facebook.png";
-  imgLn: string = "../assets/img/LinkedIn.png";
+  imgTw: string = "../assets/img/logos_redes/Twitter.png";
+  imgIg: string = "../assets/img/logos_redes/Instagram.png";
+  imgFb: string = "../assets/img/logos_redes/Facebook.png";
+  imgLn: string = "../assets/img/logos_redes/LinkedIn.png";
 
   redTw: string = "";
   redIg: string = "";

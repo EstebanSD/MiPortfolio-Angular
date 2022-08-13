@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { FormsModule } from '@angular/forms'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,7 +20,9 @@ import { QuienSoyComponent } from './componentes/quien-soy/quien-soy.component';
 import { PerfilComponent } from './componentes/perfil/perfil.component';
 import { LogoArgProgramaComponent } from './componentes/logo-arg-programa/logo-arg-programa.component';
 import { RedesYBotonComponent } from './componentes/redes-y-boton/redes-y-boton.component';
-import { BannerComponent } from './componentes/banner/banner.component'
+import { BannerComponent } from './componentes/banner/banner.component';
+import { PortfolioComponent } from './componentes/portfolio/portfolio.component';
+import { InicioComponent } from './componentes/inicio/inicio.component'
 
 
 @NgModule({
@@ -40,14 +42,17 @@ import { BannerComponent } from './componentes/banner/banner.component'
     PerfilComponent,
     LogoArgProgramaComponent,
     RedesYBotonComponent,
-    BannerComponent
+    BannerComponent,
+    PortfolioComponent,
+    InicioComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

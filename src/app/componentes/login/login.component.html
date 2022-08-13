@@ -1,12 +1,20 @@
 <div id="caja-login">
     <div class="caja-form">
         <div class="form-login">
+            <h2>Iniciar Sesión</h2>
             <form>
-                <h2>Iniciar Sesión</h2>
-                <input id="input-login-user" type="text" placeholder="Nombre de Usuario" name="correo">
-                <input id="input-login-pass" type="password" placeholder="Contraseña" name="pass">
-                <button id="enviar" class="btn btn-submit">Enviar</button>
-            </form>
+                <div class="mb-3">
+                  <label for="inputEmail" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail">
+                </div>
+
+                <div class="mb-3">
+                  <label for="inputPassword" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="inputPassword">
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
         </div>
     </div>
 </div> 
